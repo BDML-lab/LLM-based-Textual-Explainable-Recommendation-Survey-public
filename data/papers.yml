@@ -1,0 +1,1225 @@
+- citation_key: "sun2025retrieval"
+  title: "Retrieval-Augmented Recommendation Explanation Generation with Hierarchical Aggregation"
+  year: 2025
+  link: "https://arxiv.org/abs/2507.09188"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Metadata and Reviews"
+  description: "REXHA builds explanation prompts from LightGCN collaborative embeddings, hierarchically aggregated user/item profiles, and retrieved interaction-relevant reviews. The hierarchical aggregation condenses noisy reviews into compact long-term summaries, while retrieval adds target-specific evidence."
+
+- citation_key: "park2025madrec"
+  title: "MADREC: A Multi-Aspect Driven LLM Agent for Explainable and Adaptive Recommendation"
+  year: 2025
+  link: "https://arxiv.org/abs/2510.13371"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Metadata and Reviews"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / Human Evaluation"
+  description: "MADREC dynamically extracts aspect terms and aspect-level summaries from reviews to build structured user and item evidence for explanation generation. It evaluates generated explanations through human comparison of persuasiveness."
+
+- citation_key: "gao2024dre"
+  title: "DRE: Generating Recommendation Explanations by Aligning Large Language Models at Data-Level"
+  year: 2024
+  link: "https://arxiv.org/abs/2404.06311"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Metadata and Reviews"
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Grounding and Faithfulness"
+  description: "DRE summarizes target-item features and distills target-aware preference aspects from long historical reviews, then prompts the LLM to generate explanations that connect the recommended item with user-attended features."
+
+- citation_key: "wang2026beyond"
+  title: "Beyond Factual Correctness: Mitigating Preference-Inconsistent Explanations in Explainable Recommendation"
+  year: 2026
+  link: "https://arxiv.org/abs/2603.03080"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Knowledge-Graph Evidence"
+    - "Evaluation / Datasets and Evaluation References / Dataset Resources and Settings"
+  description: "PURE identifies preference inconsistency as a failure mode where explanations cite factually correct but user-misaligned attributes. It retrieves and prunes KG paths with both factual correctness and preference alignment in mind, then injects the selected paths into the LLM through soft and hard prompts; its P-EHR metric evaluates preference-inconsistent explanations."
+
+- citation_key: "pan2026mmp"
+  title: "MMP-Refer: Multimodal Path Retrieval-Augmented LLMs for Explainable Recommendation"
+  year: 2026
+  link: "https://arxiv.org/abs/2604.03666"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Multimodal Evidence"
+    - "Methodology / Input Representation / Collaborative Signals / Path and Graph Evidence"
+  description: "MMP-Refer retrieves explicit interaction paths from a multimodal user-item graph and combines them with visual-textual user/item representations for LLM-based recommendation explanation generation."
+
+- citation_key: "ma2025explainrec"
+  title: "ExplainRec: Towards Explainable Multi-Modal Zero-Shot Recommendation with Preference Attribution and Visual-Tuning"
+  year: 2025
+  link: "https://arxiv.org/abs/2511.14770"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Multimodal Evidence"
+    - "Evaluation / Datasets and Evaluation References / Dataset Resources and Settings"
+    - "Methodology / Optimization Strategies / Consistency Alignment / Explanation-Recommender Consistency"
+  description: "ExplainRec adds visual and textual evidence for multimodal zero-shot explainable recommendation and uses consistency objectives to align prediction and explanation."
+
+- citation_key: "yang2024fine"
+  title: "Fine-Tuning Large Language Model Based Explainable Recommendation with Explainable Quality Reward"
+  year: 2024
+  link: "https://ojs.aaai.org/index.php/AAAI/article/view/28777"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Metadata and Reviews"
+    - "Methodology / Optimization Strategies / Consistency Alignment / Content and Quality Alignment"
+  description: "LLM2ER-EQR builds personalized prompts with candidate concepts extracted from reviews and concept graphs, then fine-tunes the explainer with a concept-consistency reward and a high-quality alignment reward."
+
+- citation_key: "shi2025llm"
+  title: "LLM-Powered Explanations: Unraveling Recommendations through Subgraph Reasoning"
+  year: 2025
+  link: "https://arxiv.org/abs/2406.15859"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Recommender-Side Evidence"
+  description: "LLM-SRR uses an LLM to extract review-derived triples that enrich sparse user-item knowledge graphs, then applies attentive subgraph reasoning to produce recommendations and key decision paths. The selected paths are verbalized by the LLM as natural-language explanations."
+
+- citation_key: "sani2025fire"
+  title: "FIRE: Faithful Interpretable Recommendation Explanations"
+  year: 2025
+  link: "https://arxiv.org/abs/2508.05225"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Recommender-Side Evidence"
+    - "Evaluation / Datasets and Evaluation References / Evaluation References and Comparison Targets"
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Grounding and Faithfulness"
+  description: "FIRE uses an LLM to extract user needs and item features from reviews, clusters them into structured feature groups, and trains an XGBoost sentiment predictor whose SHAP-attributed top features guide LLM-based explanation generation. It evaluates faithfulness through user-item alignment, need-feature connection, rating-sentiment consistency, structure checks, and diversity rather than relying on review-overlap alone."
+
+- citation_key: "ma2024xrec"
+  title: "XRec: Large Language Models for Explainable Recommendation"
+  year: 2024
+  link: "https://aclanthology.org/2024.findings-emnlp.22/"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Collaborative Signals / Collaborative Embeddings"
+  description: "XRec maps LightGCN-derived user and item embeddings into the LLM semantic space through a lightweight MoE adapter, enabling collaborative signals to guide explanation generation. It trains the explainer with GPT-rewritten review labels."
+
+- citation_key: "zhang2026sequence"
+  title: "Sequence-Aware Large Language Models for Explainable Recommendation"
+  year: 2026
+  link: "https://arxiv.org/abs/2603.24136"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Collaborative Signals / Collaborative Embeddings"
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Downstream Utility and Online Metrics"
+  description: "SELLER exposes collaborative and temporal behavior patterns to the LLM through sequence-aware adapters. It also reports downstream recommendation metrics as evidence of explanation-related utility."
+
+- citation_key: "feng2026behavior"
+  title: "Behavior Tokens Speak Louder: Disentangled Explainable Recommendation with Behavior Vocabulary"
+  year: 2026
+  link: "https://arxiv.org/pdf/2512.15614"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Collaborative Signals / Collaborative Embeddings"
+  description: "BEAT quantizes LightGCN-based user-item interaction representations into discrete behavior tokens and aligns them with review-derived semantic signals. These behavior tokens are then projected into the LLM input space for explanation generation."
+
+- citation_key: "li2025g"
+  title: "G-Refer: Graph Retrieval-Augmented Large Language Model for Explainable Recommendation"
+  year: 2025
+  link: "https://dl.acm.org/doi/10.1145/3696410.3714727"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Collaborative Signals / Path and Graph Evidence"
+    - "Methodology / Optimization Strategies / Curriculum Learning & Weighting / Sample Weighting"
+  description: "G-Refer retrieves path-level and node-level CF evidence, translates the graph evidence into natural-language prompts for the LLM, and prunes easy samples so training focuses on cases that require graph-based explanation."
+
+- citation_key: "zhang2025oracle"
+  title: "The Oracle and The Prism: A Decoupled and Efficient Framework for Generative Recommendation Explanation"
+  year: 2025
+  link: "https://arxiv.org/abs/2511.16543"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Construction"
+  description: "Prism uses a large teacher LLM to generate faithfulness-constrained explanation labels, then distills these labels into a lightweight user-aware explainer."
+
+- citation_key: "rahdari2024logic"
+  title: "Logic-Scaffolding: Personalized Aspect-Instructed Recommendation Explanation Generation Using LLMs"
+  year: 2024
+  link: "https://dlnext.acm.org/doi/epdf/10.1145/3616855.3635689"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Metadata and Reviews"
+    - "Methodology / Generation Process / Static Reasoning / Preference-Item Matching Reasoning"
+  description: "Logic-Scaffolding retrieves relevant historical items, uses few-shot prompting to extract fine-grained aspects from movie metadata, and guides the LLM through staged reasoning that matches shared aspects between historical and recommended items before generating explanations."
+
+- citation_key: "qin2024beyond"
+  title: "Beyond Persuasion: Towards Conversational Recommender System with Credible Explanations"
+  year: 2024
+  link: "https://aclanthology.org/2024.findings-emnlp.247.pdf"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / Preference-Item Matching Reasoning"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / LLM-as-a-Judge"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / Human Evaluation"
+  description: "PC-CRS guides conversational explanations with credibility-aware persuasive strategies and refines them through critic/refiner self-reflection to reduce factual errors. It evaluates persuasiveness and credibility through human judgments and GPT-4-based judge validation."
+
+- citation_key: "lei2024recexplainer"
+  title: "RecExplainer: Aligning Large Language Models for Explaining Recommendation Models"
+  year: 2024
+  link: "https://dl.acm.org/doi/10.1145/3637528.3671802"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Evaluation References and Comparison Targets"
+    - "Methodology / Optimization Strategies / Consistency Alignment / Explanation-Recommender Consistency"
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Grounding and Faithfulness"
+  description: "RecExplainer aligns an LLM with a target recommender such as SASRec through behavior-level tasks and latent user/item embedding alignment. It uses the aligned LLM to generate recommendation explanations and evaluates them with fidelity checks and GPT-4/human ratings."
+
+- citation_key: "yang2026large"
+  title: "Large Language Model Can Interpret Latent Space of Sequential Recommender"
+  year: 2026
+  link: "https://dl.acm.org/doi/pdf/10.1145/3786201"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Consistency Alignment / Explanation-Recommender Consistency"
+  description: "RecInterpreter maps sequential recommender hidden states into the LLM token space. It extends explanation-recommender consistency toward interpreting latent behavioral representations."
+
+- citation_key: "tang2025explainable"
+  title: "Explainable Recommendation with Simulated Human Feedback"
+  year: 2025
+  link: "https://arxiv.org/pdf/2504.14147"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Consistency Alignment / Human Alignment"
+  description: "HF4Rec replaces static text fitting with simulated human feedback, optimizing generated explanations for human-facing qualities such as informativeness and persuasiveness."
+
+- citation_key: "wang2025can"
+  title: "Can Explanations Improve Recommendations? A Joint Optimization with LLM Reasoning"
+  year: 2025
+  link: "https://arxiv.org/pdf/2502.16759"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Closed-Loop Utility Optimization"
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Downstream Utility and Online Metrics"
+  description: "RecPIE treats explanation usefulness as a predictive question: generated positive and negative explanations are fed back into a predictor and its accuracy becomes a reward signal. It also reports downstream prediction metrics."
+
+- citation_key: "tang2024gavamoe"
+  title: "GaVaMoE: Gaussian-Variational Gated Mixture of Experts for Explainable Recommendation"
+  year: 2024
+  link: "https://arxiv.org/abs/2410.11841"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Collaborative Signals / Collaborative Embeddings"
+  description: "GaVaMoE uses a VAE-GMM module to map sparse user-item interactions into group-level latent preference distributions, then routes explanation generation through a multi-gating MoE architecture for cluster-aware personalization."
+
+- citation_key: "luo2024unlocking"
+  title: "Unlocking the Potential of Large Language Models for Explainable Recommendations"
+  year: 2024
+  link: "https://arxiv.org/pdf/2312.15661"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Construction"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / Human Evaluation"
+  description: "LLMXRec replaces noisy review targets with cleaner instruction-tuning explanations and discriminator labels verified by humans and GPT-4. It also evaluates generated explanations through human ratings of reasonability, attractiveness, and redundancy."
+
+- citation_key: "liu2025hierarchical"
+  title: "Hierarchical Interaction Summarization and Contrastive Prompting for Explainable Recommendations"
+  year: 2025
+  link: "https://arxiv.org/pdf/2507.06044"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Filtering"
+  description: "PGHIS-CPEG constructs structured textual profiles through hierarchical interaction summarization and uses contrastive prompting to filter useful rationale supervision."
+
+- citation_key: "gao2023chat"
+  title: "Chat-Rec: Towards Interactive and Explainable LLMs-Augmented Recommender System"
+  year: 2023
+  link: "https://arxiv.org/abs/2303.14524"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy: []
+  description: "CHAT-REC uses an LLM as an interactive interface on top of a traditional recommender. It builds prompts from user profiles, histories, dialogue context, and retrieved candidates so the LLM can rerank items and generate explanatory responses without fine-tuning."
+
+- citation_key: "yi2025recgpt"
+  title: "RecGPT Technical Report"
+  year: 2025
+  link: "https://arxiv.org/abs/2507.22879"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Filtering"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / LLM-as-a-Judge"
+  description: "RecGPT builds an industrial LLM recommendation pipeline where personalized interest-item explanations are generated offline and served through lookup. Its self-generated samples are filtered by human-LLM cooperative judges over relevance, factuality, clarity, and safety, and a Qwen-based judge is trained for recommendation explanation assessment."
+
+- citation_key: "liu2025coherency"
+  title: "Coherency Improved Explainable Recommendation via Large Language Model"
+  year: 2025
+  link: "https://ojs.aaai.org/index.php/AAAI/article/view/33329"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Recommender-Side Evidence"
+    - "Methodology / Optimization Strategies / Curriculum Learning & Weighting / Curriculum Learning"
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Grounding and Faithfulness"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / Human Evaluation"
+  description: "CIER predicts a soft rating distribution and converts it into a rating-aware word embedding for explanation generation. It further uses rating smoothing and curriculum learning, and evaluates coherence with both human annotation and automatic rating-explanation consistency checks."
+
+- citation_key: "liu2025arts"
+  title: "ARTS: A General and Efficient Multi-Task Self-Prompt Framework for Explainable Sequential Recommendation"
+  year: 2025
+  link: "https://dl.acm.org/doi/epdf/10.1145/3717833"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Collaborative Signals / Collaborative Embeddings"
+  description: "ARTS compresses long interaction histories into personalized semantic prompts and combines them with short recent sequences for efficient explainable sequential recommendation. It uses multi-task alternating optimization to share these sequence-aware prompts between recommendation and explanation generation."
+
+- citation_key: "pan2026curr"
+  title: "Curr-RLCER: Curriculum Reinforcement Learning for Coherence Explainable Recommendation"
+  year: 2026
+  link: "https://arxiv.org/pdf/2604.05341"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Curriculum Learning & Weighting / Curriculum Learning"
+    - "Methodology / Optimization Strategies / Consistency Alignment / Explanation-Recommender Consistency"
+  description: "Curr-RLCER trains explainable recommendation through a curriculum from preference judgment to rating selection and explanation generation. Its GRPO stage rewards concise, semantically accurate explanations whose inferred sentiment remains coherent with the target rating."
+
+- citation_key: "qiu2025graph"
+  title: "Graph Retrieval-Augmented LLM for Conversational Recommendation Systems"
+  year: 2025
+  link: "https://arxiv.org/abs/2503.06430"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Dialogue Evidence"
+  description: "G-CRS builds a conversation-entity interaction graph and retrieves both candidate items and similar dialogue cases with personalized PageRank. The retrieved graph and dialogue evidence is used as in-context support for LLM-based conversational recommendation."
+
+- citation_key: "li2024explainable"
+  title: "Explainable and Coherent Complement Recommendation Based on Large Language Models"
+  year: 2024
+  link: "https://dl.acm.org/doi/pdf/10.1145/3627673.3680028"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Construction"
+  description: "ECCR constructs coherent-complement supervision from item compatibility and shared semantic attributes, then uses LLM few-shot prompting to synthesize concise explanation labels for complement recommendation."
+
+- citation_key: "yang2024chain"
+  title: "Chain-of-Thought Prompting Empowered Generative User Modeling for Personalized Recommendation"
+  year: 2024
+  link: "https://dl.acm.org/doi/abs/10.1007/s00521-024-10364-2"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "GUMRec organizes user modeling through stepwise prompting to construct textual user preference states."
+
+- citation_key: "zhao2024aligning"
+  title: "Aligning Explanations for Recommendation with Rating and Feature via Maximizing Mutual Information"
+  year: 2024
+  link: "https://dl.acm.org/doi/abs/10.1145/3627673.3679663"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Evaluation References and Comparison Targets"
+    - "Methodology / Optimization Strategies / Consistency Alignment / Explanation-Recommender Consistency"
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Grounding and Faithfulness"
+  description: "MMI fine-tunes explanation generators by maximizing mutual information between generated explanations and predicted ratings or item features. Its reward design improves rating/feature alignment while regularizing the generator to preserve fluent and diverse text."
+
+- citation_key: "yang2024unleashing"
+  title: "Unleashing the Retrieval Potential of Large Language Models in Conversational Recommender Systems"
+  year: 2024
+  link: "https://dl.acm.org/doi/epdf/10.1145/3640457.3688146"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Dialogue Evidence"
+  description: "ReFICR instruction-tunes a single LLM to perform both retrieval and generation for conversational recommendation. It uses LLM-derived embeddings to retrieve candidate items and similar historical dialogues, then conditions ranking, dialogue management, and response generation on this dialogue-matched evidence."
+
+- citation_key: "kim2024pearl"
+  title: "PEARL: A Review-Driven Persona-Knowledge Grounded Conversational Recommendation Dataset"
+  year: 2024
+  link: "https://aclanthology.org/2024.findings-acl.65/"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Dataset Resources and Settings"
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Construction"
+  description: "PEARL uses LLM-based user and recommender simulators to synthesize multi-turn conversational recommendation data grounded in review-derived personas and item knowledge. It filters generated dialogues for preference contradictions, producing cleaner persona-grounded supervision and a conversational dataset setting for explanation assessment."
+
+- citation_key: "zhang2025hdrec"
+  title: "HDRec: Hierarchical Distillation for Enhanced LLM-Based Recommendation Systems"
+  year: 2025
+  link: "https://ieeexplore.ieee.org/document/10890603"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Construction"
+  description: "HDRec uses Llama-3 to hierarchically distill raw reviews into structured preference, attribute, personality, audience, and summary signals, providing cleaner supervision for recommendation and explanation learning."
+
+- citation_key: "wang2024rdrec"
+  title: "RDRec: Rationale Distillation for LLM-Based Recommendation"
+  year: 2024
+  link: "https://aclanthology.org/2024.acl-short.6/"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Construction"
+  description: "RDRec distills raw reviews into concise rationale labels about user preferences and item attributes, which provide cleaner supervision for a compact T5-based recommender in recommendation and explanation-related generation."
+
+- citation_key: "manderlier2025latent"
+  title: "From Latent Factors to Language: A User Study on LLM-Generated Explanations for an Inherently Interpretable Recommender System"
+  year: 2025
+  link: "https://arxiv.org/abs/2509.18980"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Recommender-Side Evidence"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / Human Evaluation"
+  description: "This work uses an LLM to verbalize latent user types and user-specific mixture weights from an inherently interpretable matrix-based recommender. Its user study compares model-based, history-based, and combined explanations on transparency, effectiveness, persuasion, trust, and satisfaction."
+
+- citation_key: "wang2025llm"
+  title: "LLM as Explainable Re-Ranker for Recommendation System"
+  year: 2025
+  link: "https://arxiv.org/abs/2512.03439"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Offline Utility Preference Alignment"
+  description: "This work trains an LLM to rerank candidate items and generate ranking rationales using GPT-generated positive and negative examples. It combines SFT with DPO/RPO-style preference optimization and uses bootstrapped inference to reduce position bias."
+
+- citation_key: "petruzzelli2024instructing"
+  title: "Instructing and Prompting Large Language Models for Explainable Cross-Domain Recommendations"
+  year: 2024
+  link: "https://dl.acm.org/doi/10.1145/3640457.3688137"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Dataset Resources and Settings"
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Construction"
+  description: "CDR-LLM formulates cross-domain recommendation as an instruction-following task that ranks target-domain candidates from source-domain user preferences and generates natural-language explanations. It evaluates zero-shot, one-shot, and instruction-tuned source-to-target transfer settings."
+
+- citation_key: "tiwari2025shielded"
+  title: "Shielded RecRL: Explanation Generation for Recommender Systems without Ranking Degradation"
+  year: 2025
+  link: "https://arxiv.org/abs/2601.03608"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "Traditional recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Consistency Alignment / Content and Quality Alignment"
+  description: "Shielded RecRL freezes the ranking tower and optimizes a LoRA-based LLM explanation tower with PPO, using length, content-relevance, coherence, and KL rewards to improve explanations without degrading recommendation performance."
+
+- citation_key: "park2023user"
+  title: "A User Preference and Intent Extraction Framework for Explainable Conversational Recommender Systems"
+  year: 2023
+  link: "https://dl.acm.org/doi/10.1145/3596454.3597178"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Dialogue Evidence"
+  description: "The User Preference and Intent Extraction framework detects feature entities and estimates entity-level sentiment preferences from dialogue, while a context-aware graph extracts intent keywords beyond explicit entity mentions. These cues condition conversational recommendation and explanation generation."
+
+- citation_key: "chen2025m"
+  title: "M-LLM3REC: A Motivation-Aware User-Item Interaction Framework for Enhancing Recommendation"
+  year: 2025
+  link: "https://dl.acm.org/doi/10.1145/3746252.3761214"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / Preference-Item Matching Reasoning"
+  description: "M-LLM3REC aligns LLM-inferred user motivations with item semantic traits for cold-start recommendation, using self-regularized reason checking to produce more traceable and motivation-consistent explanations."
+
+- citation_key: "yu2026thinkrec"
+  title: "ThinkRec: Thinking-Based Recommendation via LLM"
+  year: 2026
+  link: "https://dl.acm.org/doi/pdf/10.1145/3774904.3792070"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy: []
+  description: "ThinkRec synthesizes reasoning traces with a teacher reasoning model to jointly train recommendation prediction and reason generation. It also injects collaborative ID embeddings through a projector and uses instance-wise LoRA expert fusion for user-specific reasoning."
+
+- citation_key: "ebrat2025end"
+  title: "End-to-End Personalization: Unifying Recommender Systems with Large Language Models"
+  year: 2025
+  link: "https://arxiv.org/abs/2508.01514"
+  primary_line: "Predict-then-Explain"
+  display_group: "general"
+  scope_subtype: "LLM / LLM-enhanced recommender + LLM explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "This work combines LLM-generated user/item profiles with a GAT recommender, then uses LLM reranking to generate natural-language justifications grounded in matched profile attributes, themes, and styles."
+
+- citation_key: "wang2024recmind"
+  title: "RecMind: Large Language Model Powered Agent for Recommendation"
+  year: 2024
+  link: "https://aclanthology.org/2024.findings-naacl.271/"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Tools, Environments, and Other Agents"
+  description: "RecMind uses Self-Inspiring planning, memory, and external tools to preserve explored reasoning states and external evidence, enabling training-free recommendation, explanation generation, and review summarization."
+
+- citation_key: "wang2024macrec"
+  title: "MACRec: A Multi-Agent Collaboration Framework for Recommendation"
+  year: 2024
+  link: "https://dl.acm.org/doi/10.1145/3626772.3657669"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Tools, Environments, and Other Agents"
+  description: "MACRec coordinates specialized LLM agents for task decomposition, evidence gathering, external search, and reflection, enabling collaborative recommendation and explanation generation without task-specific training."
+
+- citation_key: "ma2025agenticrag"
+  title: "AgenticRAG: Tool-Augmented Foundation Models for Zero-Shot Explainable Recommender Systems"
+  year: 2025
+  link: "https://arxiv.org/abs/2510.02668"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Tools, Environments, and Other Agents"
+    - "Evaluation / Datasets and Evaluation References / Dataset Resources and Settings"
+  description: "AgenticRAG builds a zero-shot explainable recommender by combining RAG-enhanced knowledge retrieval, external tool invocation, and structured CoT reasoning. It lets user and item agents exchange preferences, constraints, features, justifications, and confidence signals, then uses consensus scoring to support ranking while generating step-by-step explanations based on retrieved context and tool results."
+
+- citation_key: "yi2025recgptv2"
+  title: "RecGPT-V2 Technical Report"
+  year: 2025
+  link: "https://arxiv.org/abs/2512.14503"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Tools, Environments, and Other Agents"
+    - "Methodology / Optimization Strategies / Consistency Alignment / Human Alignment"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / LLM-as-a-Judge"
+  description: "RecGPT-V2 uses a planner-expert-arbiter pipeline for agentic intent reasoning and meta-prompting to produce context-aware guidance for explanation generation. It further aligns explanation quality through Agent-as-a-Judge evaluation and reward-model distillation."
+
+- citation_key: "mehta2026matrag"
+  title: "MATRAG: Multi-Agent Transparent Retrieval-Augmented Generation for Explainable Recommendations"
+  year: 2026
+  link: "https://arxiv.org/abs/2604.20848"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Knowledge-Graph Evidence"
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Tools, Environments, and Other Agents"
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Grounding and Faithfulness"
+  description: "MATRAG combines KG-augmented RAG with specialized agents for transparent recommendation and explanation generation. An orchestrator coordinates user modeling, item analysis, reasoning, and explanation agents to retrieve and rerank KG subgraphs, pair recommendation reasoning with structured evidence, and convert reasoning chains into natural-language explanations. It also reports an entailment-style grounding check that tests whether explanation claims are supported by retrieved KG evidence."
+
+- citation_key: "zhang2025enhancing"
+  title: "Recommendation Explanations through User-Centric Refinement"
+  year: 2025
+  link: "https://aclanthology.org/2025.findings-emnlp.434/"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Tools, Environments, and Other Agents"
+  description: "RefineX treats recommendation explanations as revisable outputs rather than one-shot generations. It uses a training-free planner-refiner-reflector workflow to iteratively refine initial explanations from base recommenders, where the planner selects user-centric aspects, the refiner rewrites the explanation, and strategic/content reflectors provide feedback on factuality, personalization, and sentiment coherence."
+
+- citation_key: "chen2026memrec"
+  title: "MemRec: Collaborative Memory-Augmented Agentic Recommender System"
+  year: 2026
+  link: "https://arxiv.org/abs/2601.08816"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Input Representation / Collaborative Signals / Collaborative Memory"
+  description: "MemRec builds collaborative memory by curating graph neighbors and synthesizing high-level preference facets with confidence and supporting evidence. This memory is then used by a recommendation LLM to rank candidates and generate rationales that incorporate community-level behavioral signals beyond isolated user histories."
+
+- citation_key: "raj2026harpo"
+  title: "HARPO: Hierarchical Agentic Reasoning for User-Aligned Conversational Recommendation"
+  year: 2026
+  link: "https://arxiv.org/abs/2604.10048"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Tools, Environments, and Other Agents"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / Human Evaluation"
+  description: "HARPO treats conversational recommendation as a user-aligned decision process, using virtual tool operations and tree-structured reasoning to explore candidate reasoning paths before generating responses. It explicitly turns selected reasoning traces into recommendation explanations and reports user-facing evaluation of recommendation quality, explanation quality, and satisfaction."
+
+- citation_key: "zu2026think"
+  title: "Think Then Recommend: An LLM-Powered Multi-Agent Framework for Personalized Conversational Recommendation"
+  year: 2026
+  link: "https://dl.acm.org/doi/10.1145/3774904.3793050"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Tools, Environments, and Other Agents"
+  description: "TTR builds an e-commerce conversational recommender around structured intent modeling. It first extracts basic user intents from dialogue, enriches them with historical behavior or popularity-aware inference, and then uses a preference-aligned LLM ranker to match completed intents with product attributes while generating intent-grounded recommendation explanations."
+
+- citation_key: "cai2025agentic"
+  title: "Agentic Feedback Loop Modeling Improves Recommendation and User Simulation"
+  year: 2025
+  link: "https://dl.acm.org/doi/10.1145/3726302.3729893"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Users and Feedback Sources"
+  description: "AFL models recommendation as an agentic feedback loop between a recommendation agent and a user agent. The recommendation agent proposes an item with a rationale, while the user agent evaluates it and stores acceptance, rejection, or critique feedback in memory, allowing later recommendation attempts to revise both item choices and recommendation rationales."
+
+- citation_key: "chen2026top"
+  title: "When Top-Ranked Recommendations Fail: Modeling Multi-Granular Negative Feedback for Explainable and Controllable Recommendation"
+  year: 2026
+  link: "https://arxiv.org/abs/2511.18700"
+  primary_line: "Predict-then-Explain"
+  display_group: "agentic_explainer"
+  scope_subtype: "Agentic explainer"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Tools, Environments, and Other Agents"
+  description: "Agentic ENF explains why top-ranked video recommendations fail by modeling user-side negative feedback through profile, video, and reasoning agents. It combines user preference profiling, multimodal video analysis, and stepwise RL rewards to predict negative feedback types and generate explanations for why a user may dislike or skip a recommended video."
+
+- citation_key: "fang2025reason4rec"
+  title: "Reason4Rec: Large Language Models for Recommendation with Deliberative User Preference Alignment"
+  year: 2025
+  link: "https://arxiv.org/abs/2502.02061"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / Preference-Item Matching Reasoning"
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Filtering"
+  description: "Reason4Rec first distills aspect-level preferences and generates preference-item matching rationales before predicting ratings. Its reward-model filtering step uses target-review signals to select rationale supervision that better aligns reasoning with users’ real preferences."
+
+- citation_key: "kim2025driven"
+  title: "Review-driven Personalized Preference Reasoning with Large Language Models for Recommendation"
+  year: 2025
+  link: "https://dl.acm.org/doi/10.1145/3726302.3730055"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / Preference-Item Matching Reasoning"
+  description: "EXP3RT distills review-derived preferences into user and item profiles, then trains a smaller LLM to generate profile-based reasoning before rating prediction or reranking. Its teacher LLM creates rating-conditioned rationale supervision, helping the student produce more personalized and explainable predictions."
+
+- citation_key: "tsai2024leveraging"
+  title: "Leveraging LLM Reasoning Enhances Personalized Recommender Systems"
+  year: 2024
+  link: "https://aclanthology.org/2024.findings-acl.780/"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Evaluation References and Comparison Targets"
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Filtering"
+  description: "Rec-SAVER automatically builds rating-conditioned rationale references for evaluating generated rationales. It generates multiple explanations with access to the ground-truth rating, then self-verifies them by checking whether each explanation helps recover the original rating."
+
+- citation_key: "park2025towards"
+  title: "Towards Trustworthy LLM-Based Recommendation via Rationale Integration"
+  year: 2025
+  link: "https://arxiv.org/abs/2601.02364"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Filtering"
+  description: "LLM-Rec constructs rationale-enriched user-history/item training triples and filters incoherent rationale candidates before using them as supervision for instruction tuning."
+
+- citation_key: "wang2026msr"
+  title: "MSR-Rec: Multi-Step Reasoning-Enhanced LLM for Sequential Recommendation"
+  year: 2026
+  link: "https://ojs.aaai.org/index.php/AAAI/article/view/38620"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / Preference-Item Matching Reasoning"
+    - "Evaluation / Datasets and Evaluation References / Evaluation References and Comparison Targets"
+  description: "MSR-Rec uses DeepSeek-R1 to synthesize structured multi-step reasoning paths for sequential recommendation, then fine-tunes Llama3 to generate reasoning tokens before the recommended item. At inference time, bidirectional user-side and item-side reasoning are adaptively fused for recommendation and rationale generation."
+
+- citation_key: "feng2025r1"
+  title: "R1-Ranker: Teaching LLM Rankers to Reason"
+  year: 2025
+  link: "https://arxiv.org/abs/2506.21638"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / Preference-Item Matching Reasoning"
+  description: "R1-Ranker uses reinforcement learning to teach LLM rankers explicit candidate-quality reasoning, with an iterative design that repeatedly excludes the least suitable candidate and makes the ranking process more inspectable."
+
+- citation_key: "kong2026think"
+  title: "Think before Recommendation: Autonomous Reasoning-enhanced Recommender"
+  year: 2026
+  link: "https://proceedings.neurips.cc/paper_files/paper/2025/file/cea5bc68b890bffb10f18aaaab2becb1-Paper-Conference.pdf"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Closed-Loop Utility Optimization"
+  description: "RecOne initializes recommendation reasoning with teacher-generated SFT samples, then uses GRPO-based RL with rating and format rewards to optimize structured analysis, matching, and rating outputs."
+
+- citation_key: "xie2025recllm"
+  title: "RecLLM-R1: A Two-Stage Training Paradigm with Reinforcement Learning and Chain-of-Thought V1"
+  year: 2025
+  link: "https://arxiv.org/abs/2506.19235"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Closed-Loop Utility Optimization"
+  description: "RecLLM-R1 combines CoT-oriented SFT with GRPO-based reinforcement learning, using ranking rewards and format constraints to refine reasoning-guided candidate ranking."
+
+- citation_key: "zhao2025reason"
+  title: "Reason-to-Recommend: Using Interaction-of-Thought Reasoning to Enhance LLM Recommendation"
+  year: 2025
+  link: "https://arxiv.org/abs/2506.05069"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Input Representation / Collaborative Signals / Path and Graph Evidence"
+  description: "R2Rec transforms collaborative user-item interaction chains into stepwise Interaction-of-Thought traces, giving the LLM structured reasoning supervision for candidate ranking."
+
+- citation_key: "parkmore"
+  title: "More Than What Was Chosen: LLM-Based Explainable Recommendation Beyond Noisy User Preferences"
+  year: 2026
+  link: "https://openreview.net/forum?id=WYfDoB44xy"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Curriculum Learning & Weighting / Sample Weighting"
+  description: "C-APO uses LLM-scored rationales to compare revealed preferences with coherent preferences, then downweights behavior signals that conflict with more logically consistent preference reasoning."
+
+- citation_key: "yun2026arrow"
+  title: "ARROW: Adaptive Reasoning for LLM-Based Recommendation with Explainability"
+  year: 2026
+  link: "https://dl.acm.org/doi/epdf/10.1145/3773966.3779396"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Curriculum Learning & Weighting / Sample Weighting"
+  description: "ARROW uses genre prediction as an explicit reasoning subtask and dynamically increases its training weight when prediction uncertainty is high, guiding the LLM to learn more informative preference reasoning for recommendation."
+
+- citation_key: "wu2025starec"
+  title: "STARec: An Efficient Agent Framework for Recommender Systems via Autonomous Deliberate Reasoning"
+  year: 2025
+  link: "https://dl.acm.org/doi/10.1145/3746252.3760995"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "STARec uses a dual-process agent that quickly ranks candidates with explanations from textual user memory, then uses slower self-reflection over simulated feedback to update the user preference memory for later recommendations."
+
+- citation_key: "you2026r"
+  title: "R2ec: Towards Large Recommender Models with Reasoning"
+  year: 2026
+  link: "https://arxiv.org/pdf/2505.16994"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Reward Shaping and Credit Assignment"
+  description: "R2ec unifies reasoning-token generation and embedding-based item prediction, while RecPO combines discrete ranking rewards with continuous target-item similarity to provide denser utility signals for sampled reasoning paths."
+
+- citation_key: "he2026reasoning"
+  title: "Reasoning over Semantic IDs Enhances Generative Recommendation"
+  year: 2026
+  link: "https://arxiv.org/abs/2603.23183"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Reward Shaping and Credit Assignment"
+  description: "SIDReasoner aligns semantic IDs with natural language and uses reinforced optimization with SID-prefix matching rewards, guiding LLMs to reason over item identifiers during generative recommendation."
+
+- citation_key: "zheng2026reasoning"
+  title: "Reasoning to Rank: An End-to-End Solution for Exploiting Large Language Models for Recommendation"
+  year: 2026
+  link: "https://arxiv.org/abs/2602.12530"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Reward Shaping and Credit Assignment"
+  description: "R2Rank reduces position bias through pointwise candidate reasoning and scoring, then uses a Plackett-Luce surrogate to align generated reasoning and relevance scores with listwise ranking utility."
+
+- citation_key: "liang2026generative"
+  title: "Generative Reasoning Re-ranker"
+  year: 2026
+  link: "https://arxiv.org/abs/2602.07774"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Filtering"
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Reward Shaping and Credit Assignment"
+  description: "GR2 aligns LLMs with semantic IDs and uses rejection sampling to keep successful reasoning traces for reranking supervision, then applies ranking-improvement rewards to make explanations serve candidate reordering."
+
+- citation_key: "hong2025generative"
+  title: "Generative Reasoning Recommendation via LLMs"
+  year: 2025
+  link: "https://arxiv.org/abs/2510.20815"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Reward Shaping and Credit Assignment"
+  description: "GREAM aligns LLMs with hierarchical semantic item indices, activates structured recommendation reasoning through curriculum training, and uses prefix-match rewards over generated item indices to provide partial credit before exact target matching."
+
+- citation_key: "liu2025onerec"
+  title: "OneRec-Think: In-Text Reasoning for Generative Recommendation"
+  year: 2025
+  link: "https://arxiv.org/abs/2510.11639"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Reward Shaping and Credit Assignment"
+  description: "OneRec-Think aligns itemic tokens with natural language, activates in-text reasoning from pruned-to-noisy user histories, and uses rollout-beam rewards to give positive feedback when the target item appears in the beam-generated candidate set."
+
+- citation_key: "zhou2025openonerec"
+  title: "OpenOneRec Technical Report"
+  year: 2025
+  link: "https://arxiv.org/abs/2512.24762"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Dataset Resources and Settings"
+  description: "OpenOneRec introduces RecIF-Bench, a broad instruction-following benchmark that includes recommendation-explanation generation evaluated with LLM-as-Judge."
+
+- citation_key: "team2026onereason"
+  title: "OneReason Technical Report"
+  year: 2026
+  link: "https://arxiv.org/abs/2606.06260"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / On-Policy Distillation"
+  description: "OneReason abstracts long user histories into persona-level preference priors, expands evidence-supported interest hypotheses, and compares them to infer the next interest direction. Its multi-teacher on-policy distillation further unifies domain-specialized reasoning trajectories into a general recommendation model."
+
+- citation_key: "zheng2026sapo"
+  title: "SAPO: Step-Aligned Policy Optimization for Reasoning-Based Generative Recommendation"
+  year: 2026
+  link: "https://arxiv.org/abs/2605.17648"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Reward Shaping and Credit Assignment"
+  description: "SAPO treats each thinking block and semantic-ID token as a step-level optimization unit, giving credit to correct intermediate SID matches during reasoning-based generative recommendation."
+
+- citation_key: "huang2026rerec"
+  title: "ReRec: Reasoning-Augmented LLM-Based Recommendation Assistant via Reinforcement Fine-Tuning"
+  year: 2026
+  link: "https://arxiv.org/abs/2604.07851"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Curriculum Learning & Weighting / Curriculum Learning"
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Reward Shaping and Credit Assignment"
+  description: "ReRec uses curriculum-guided reinforcement fine-tuning with query-attribute and collaborative-graph rewards, while downweighting reasoning segments associated with incorrect recommendations."
+
+- citation_key: "xiang2026user"
+  title: "User Simulator-Guided Multi-Turn Preference Optimization for Reasoning LLM-Based Conversational Recommendation"
+  year: 2026
+  link: "https://arxiv.org/abs/2604.03671"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Users and Feedback Sources"
+  description: "SMTPO uses simulated multi-turn user feedback with GRPO-based preference optimization, combining preference-alignment rewards and a semantic-collaborative retriever to refine recommendation reasoning and candidate selection."
+
+- citation_key: "li2026stllm"
+  title: "STLLM-Rec: Enhancing Explainable Recommendation via Self-Training LLMs"
+  year: 2026
+  link: "https://dl.acm.org/doi/10.1007/s11280-025-01397-1"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Dataset Resources and Settings"
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Filtering"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / LLM-as-a-Judge"
+  description: "STLLM-Rec uses tree search to generate multiple reasoning paths and a value model to select promising rationales for self-training. It also evaluates explanation quality under zero-shot settings with multidimensional GPT-4o judging."
+
+- citation_key: "wang2026mllmrec"
+  title: "MLLMRec-R1: Incentivizing Reasoning Capability in Large Language Models for Multimodal Sequential Recommendation"
+  year: 2026
+  link: "https://arxiv.org/abs/2603.06243"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Multimodal Evidence"
+    - "Methodology / Optimization Strategies / Label Synthesis & Distillation / Rationale Label Filtering"
+  description: "MLLMRec-R1 textualizes multimodal item signals into captions, refines pseudo-CoT reasoning with stronger text reasoning models, and filters samples by modality and prediction consistency to reduce visual-token cost and shortcut learning in multimodal sequential recommendation."
+
+- citation_key: "park2026think"
+  title: "Think Wise, Collaborate Effectively: A Rationale-Aware LLM-Based Recommender with Reinforcement Learning"
+  year: 2026
+  link: "https://ojs.aaai.org/index.php/AAAI/article/view/38590"
+  primary_line: "Reason-then-Recommend"
+  display_group: "general"
+  scope_subtype: "Reasoning trace as explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Reward Shaping and Credit Assignment"
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Downstream Utility and Online Metrics"
+  description: "TWiCE-Rec builds self-annotated rationale triples for rationale-aware instruction tuning, then uses a frozen collaborative filtering model during GRPO to give partial credit to predictions supported by collaborative signals. It also reports GPT-4o rationale-quality scoring and online CTR/latency evaluation."
+
+- citation_key: "ramos2024transparent"
+  title: "Transparent and scrutable recommendations using natural language user profiles"
+  year: 2024
+  link: "https://aclanthology.org/2024.acl-long.753.pdf"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy: []
+  description: "UPR builds natural-language user profiles by extracting and ranking review-derived preference features, then prompting an LLM to summarize them into editable first-person profiles. These profiles replace opaque user embeddings with transparent, scrutable preference representations that users can inspect and revise directly."
+
+- citation_key: "sun2024large"
+  title: "Large Language Models for Intent-Driven Session Recommendations"
+  year: 2024
+  link: "https://dl.acm.org/doi/epdf/10.1145/3626772.3657688"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "LLM4ISR uses frozen LLM prompting to infer variable numbers of session-level intents from item combinations, making short-term user intent explicit in natural language. It further optimizes prompts through reflection on failed cases and UCB-based prompt selection."
+
+- citation_key: "yue2025cot4rec"
+  title: "CoT4Rec: Revealing User Preferences through Chain of Thought for Recommender Systems"
+  year: 2025
+  link: "https://ojs.aaai.org/index.php/AAAI/article/view/33434"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "CoT4Rec uses sliding-window behavior clustering and LLM-generated demonstrations to train a preference analyzer that converts interaction histories into readable textual user preferences."
+
+- citation_key: "liu2025improving"
+  title: "Improving LLM-Powered Recommendations with Personalized Information"
+  year: 2025
+  link: "https://dl.acm.org/doi/epdf/10.1145/3726302.3730211"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "CoT-Rec maintains long-term user preferences from batched interaction histories and generates user-specific item perceptions through objective descriptions, simulated reviews, and subjective impression extraction."
+
+- citation_key: "gao2025langptune"
+  title: "LangPTune: Optimizing Language-based User Profiles for Recommendation"
+  year: 2025
+  link: "https://dl.acm.org/doi/epdf/10.1145/3746252.3761369"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Closed-Loop Utility Optimization"
+  description: "LangPTune uses a profile encoder to sample multiple natural-language user profiles, evaluates them through a recommender decoder, and constructs preference pairs from their downstream utility to iteratively optimize profile generation."
+
+- citation_key: "wang2025lettingo"
+  title: "LettinGo: Explore User Profile Generation for Recommendation System"
+  year: 2025
+  link: "https://dl.acm.org/doi/epdf/10.1145/3711896.3737024"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Offline Utility Preference Alignment"
+  description: "LettinGo samples diverse language-based user profiles, uses downstream recommendation outcomes to construct positive-negative profile pairs, and applies DPO-style optimization so the profile generator can adapt profile formats without fixed templates."
+
+- citation_key: "cai2026mgfrec"
+  title: "MGFRec: Towards Reinforced Reasoning Recommendation with Multiple Groundings and Feedback"
+  year: 2026
+  link: "https://arxiv.org/pdf/2510.22888"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Dynamic Interaction / Interaction with Users and Feedback Sources"
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Closed-Loop Utility Optimization"
+  description: "MGFRec models recommendation as an iterative think-ground-feedback loop, where a recommendation agent reasons about user interests, grounds generated item-title queries by matching them to real items, and revises later queries using simulated user-agent feedback."
+
+- citation_key: "lin2025rec"
+  title: "Rec-R1: Bridging Generative Large Language Models and User-Centric Recommendation Systems via Reinforcement Learning"
+  year: 2025
+  link: "https://arxiv.org/abs/2503.24289"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Closed-Loop Utility Optimization"
+  description: "Rec-R1 treats LLM-generated recommendation texts, such as rewritten queries or user preference summaries, as optimizable policies and updates them with downstream recommendation rewards"
+
+- citation_key: "huang2025mr"
+  title: "MR.Rec: Synergizing Memory and Reasoning for Personalized Recommendation Assistant with LLMs"
+  year: 2025
+  link: "https://arxiv.org/abs/2510.14629"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Closed-Loop Utility Optimization"
+  description: "MR.Rec organizes user history into hierarchical memory, retrieves relevant preference patterns through reasoning, and generates an ideal item profile while optimizing memory utilization with reinforcement learning."
+
+- citation_key: "xia2026trackrec"
+  title: "TrackRec: Iterative Alternating Feedback with Chain-of-Thought via Preference Alignment for Recommendation"
+  year: 2026
+  link: "https://arxiv.org/pdf/2508.15388"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Optimization Strategies / Recommendation-Driven Rewards / Closed-Loop Utility Optimization"
+  description: "TrackRec samples multiple RecCoT user-preference analyses, uses a validator to score their downstream utility, and applies Softmax-DPO plus alternating validator tuning to improve preference generation."
+
+- citation_key: "zheng2024harnessing"
+  title: "Harnessing Large Language Models for Text-Rich Sequential Recommendation"
+  year: 2024
+  link: "https://dl.acm.org/doi/epdf/10.1145/3589334.3645358"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "LLM-TRSR uses hierarchical or recurrent LLM summarization to turn long text-rich interaction histories into compact textual user preference summaries."
+
+- citation_key: "ye2025harnessing"
+  title: "Harnessing Multimodal Large Language Models for Multimodal Sequential Recommendation"
+  year: 2025
+  link: "https://ojs.aaai.org/index.php/AAAI/article/view/33426"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "MLLM-MSR summarizes multimodal item histories into text and uses recurrent LLM-based preference inference to produce evolving textual user preference summaries."
+
+- citation_key: "wang2023drdt"
+  title: "DRDT: Dynamic Reflection with Divergent Thinking for LLM-Based Sequential Recommendation"
+  year: 2023
+  link: "https://arxiv.org/abs/2312.11336"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Input Representation / Collaborative Signals / Collaborative Memory"
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "DRDT uses collaborative in-context demonstrations, divergent thinking, and dynamic reflection to analyze user histories from multiple preference dimensions. It revisits earlier interactions with historical feedback, allowing the LLM to refine its understanding of user interests before reranking candidates."
+
+- citation_key: "yu2024peprec"
+  title: "PepRec: Progressive Enhancement of Prompting for Recommendation"
+  year: 2024
+  link: "https://aclanthology.org/2024.emnlp-main.995.pdf"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Input Representation / Collaborative Signals / Collaborative Memory"
+  description: "PepRec progressively enhances a target user’s prompt by sampling similar users from behavior-based clusters and merging LLM-generated summaries of their positive and negative preferences, making collaborative signals available as compact textual preference evidence."
+
+- citation_key: "long2024got4rec"
+  title: "GOT4Rec: Graph of Thoughts for Sequential Recommendation"
+  year: 2024
+  link: "https://arxiv.org/abs/2411.14922"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "GOT4Rec uses graph-of-thought prompting to analyze user histories from short-term, long-term, and collaborative preference perspectives, then aggregates these reasoning branches through voting for zero-shot sequential recommendation."
+
+- citation_key: "zhao2024lane"
+  title: "LANE: Logic Alignment of Non-tuning Large Language Models and Online Recommendation Systems for Explainable Reason Generation"
+  year: 2024
+  link: "https://arxiv.org/abs/2407.02833"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / Human Evaluation"
+  description: "LANE aligns a black-box recommender’s latent user vector with multiple LLM-generated preference vectors, translating the recommender representation into weighted natural-language preferences. These preference weights are then reused in CoT-style explanation prompting to produce more logic-aware recommendation reasons."
+
+- citation_key: "kim2026offline"
+  title: "Offline Reasoning for Efficient Recommendation: LLM-Empowered Persona-Profiled Item Indexing"
+  year: 2026
+  link: "https://arxiv.org/abs/2602.21756"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "Persona4Rec shifts LLM reasoning offline by generating multiple interpretable personas for each item from metadata and reviews, then aligning user profiles with the most relevant item personas to train a lightweight encoder for online recommendation."
+
+- citation_key: "lee2025sprint"
+  title: "SPRINT: Scalable and Predictive Intent Refinement for LLM-Enhanced Session-Based Recommendation"
+  year: 2025
+  link: "https://arxiv.org/abs/2508.00570"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "SPRINT uses hard-session selection, a global intent pool, and a predict-and-correct loop to extract reliable session intents, then distills them into a lightweight predictor for scalable online recommendation."
+
+- citation_key: "qiu2025reasoning"
+  title: "Reasoning Over User Preferences: Knowledge Graph-Augmented LLMs for Explainable Conversational Recommendation"
+  year: 2025
+  link: "https://arxiv.org/abs/2411.14459"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Input Representation / Heterogeneous Information / Knowledge-Graph Evidence"
+  description: "COMPASS augments conversational user profiling with knowledge-graph entities by aligning graph embeddings to the LLM semantic space, enabling structured preference summaries that combine reasoning, long-term preferences, and current interests."
+
+- citation_key: "liu2025bridge"
+  title: "Bridge the Domains: Large Language Models Enhanced Cross-Domain Sequential Recommendation"
+  year: 2025
+  link: "https://dl.acm.org/doi/epdf/10.1145/3726302.3729911"
+  primary_line: "Auxiliary Preference Reasoning"
+  display_group: "general"
+  scope_subtype: "Preference/profile inference without complete item-level explanation"
+  taxonomy:
+    - "Methodology / Generation Process / Static Reasoning / User Preference Reasoning"
+  description: "LLM4CDSR uses unified LLM-based item embeddings to connect items across domains and hierarchical LLM profiling to summarize mixed-domain histories into textual cross-domain user preferences."
+
+- citation_key: "li2025alert"
+  title: "ALERT: An LLM-Powered Benchmark for Automatic Evaluation of Recommendation Explanations"
+  year: 2025
+  link: "https://aclanthology.org/2025.naacl-long.137/"
+  primary_line: "Evaluation"
+  display_group: "general"
+  scope_subtype: "Evaluation benchmark/resource"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Dataset Resources and Settings"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / LLM-as-a-Judge"
+  description: "ALERT introduces a real e-commerce benchmark for reference-free evaluation of recommendation explanations, built from user-item interactions and purchase histories across diverse product categories. It designs criterion-specific LLM judges for reasoning, clarity, engagement, and neutrality, then validates their decisions against trained expert judgments."
+
+- citation_key: "mehta2026helm"
+  title: "HELM: A Human-Centered Evaluation Framework for LLM-Powered Recommender Systems"
+  year: 2026
+  link: "https://arxiv.org/abs/2601.19197"
+  primary_line: "Evaluation"
+  display_group: "general"
+  scope_subtype: "Human-centered evaluation framework"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Dataset Resources and Settings"
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / Human Evaluation"
+  description: "HELM proposes a human-centered evaluation framework for LLM-powered recommender systems, combining expert ratings across intent alignment, explanation quality, interaction naturalness, trust/transparency, and fairness/diversity with automated checks for faithfulness, consistency, popularity bias, coverage, and diversity."
+
+- citation_key: "kabongo2026factual"
+  title: "On the Factual Consistency of Text-based Explainable Recommendation Models"
+  year: 2026
+  link: "https://arxiv.org/pdf/2512.24366"
+  primary_line: "Evaluation"
+  display_group: "general"
+  scope_subtype: "Factuality evaluation benchmark/resource"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Dataset Resources and Settings"
+    - "Evaluation / Datasets and Evaluation References / Evaluation References and Comparison Targets"
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Grounding and Faithfulness"
+  description: "This benchmark augments Amazon review datasets with extracted atomic preference statements and reconstructed ground-truth explanations for factuality-aware evaluation of recommendation explanations. It introduces statement-level metrics such as St2Exp, StEnt, and StCoh to measure whether generated explanations are supported by review evidence."
+
+- citation_key: "zhang2026robustexplain"
+  title: "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation"
+  year: 2026
+  link: "https://arxiv.org/pdf/2601.19120"
+  primary_line: "Evaluation"
+  display_group: "general"
+  scope_subtype: "Robustness evaluation"
+  taxonomy:
+    - "Evaluation / Evaluation Methods / Automated Objective Metrics / Text Quality and Semantic Similarity"
+  description: "RobustExplain evaluates the robustness of LLM-based recommendation explanation agents under controlled user-history perturbations, using paired original and perturbed histories for the same recommendation. It measures explanation stability through semantic similarity, keyword stability, structural consistency, and length stability."
+
+- citation_key: "zhao2025adapting"
+  title: "Adapting LLMs for Personalized Evaluation of Explanations for Recommendations: A Meta-Learning Approach"
+  year: 2025
+  link: "https://dl.acm.org/doi/epdf/10.1145/3746252.3761020"
+  primary_line: "Evaluation"
+  display_group: "general"
+  scope_subtype: "LLM-as-a-Judge or personalized evaluator"
+  taxonomy:
+    - "Evaluation / Evaluation Methods / Subjective and Cognitive Evaluation / LLM-as-a-Judge"
+  description: "This work adapts LLMs for personalized evaluation of recommendation explanations by treating each user’s explanation-rating behavior as a meta-learning task. It combines MAML with PEFT for few-shot user adaptation and further uses task-similarity-aware grouping to better capture shared evaluation preferences across similar users."
+
+- citation_key: "shimizu2025disentangling"
+  title: "Disentangling Likes and Dislikes in Personalized Generative Explainable Recommendation"
+  year: 2025
+  link: "https://arxiv.org/abs/2410.13248"
+  primary_line: "Evaluation"
+  display_group: "general"
+  scope_subtype: "Evaluation resource or protocol for textual explanations"
+  taxonomy:
+    - "Evaluation / Datasets and Evaluation References / Evaluation References and Comparison Targets"
+  description: "This work builds sentiment-aware evaluation resources by summarizing post-purchase reviews and extracting positive and negative opinion features. It introduces sentiment-matching and positive/negative content-similarity metrics to assess whether generated explanations correctly reflect what users like and dislike."

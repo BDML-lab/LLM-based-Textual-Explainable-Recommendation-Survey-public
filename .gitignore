@@ -1,0 +1,24 @@
+# Manuscripts and PDFs
+*.pdf
+*.tex
+acmsmall.*
+Ruan_Textual_Explainable_Recommendation_Survey.pdf
+sample-base.bib
+
+# LaTeX / build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Figures and source tables from the manuscript repo
+figures/
+tables/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
